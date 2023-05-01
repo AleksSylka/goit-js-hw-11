@@ -27,7 +27,7 @@ async function onSearchKey(event) {
     }
 
     try {
-        const respons = await pixabayAPI.getPhotoByQuery(page = 1);
+        const respons = await pixabayAPI.getPhotoByQuery(currentPage);
         if (respons.data.hits.length === 0) {
             divEl.innerHTML = '';
             btnLoadEl.classList.add('is-hidden');
