@@ -41,8 +41,8 @@ async function onSearchKey(event) {
             btnLoadEl.classList.remove('is-hidden');
         }
         Report.success('Success', `Hooray! We found ${respons.data.totalHits} images.`)
-    } catch(err) {
-        console.log(err)
+    } catch(error) {
+        console.log(error);
     }
 }
 
